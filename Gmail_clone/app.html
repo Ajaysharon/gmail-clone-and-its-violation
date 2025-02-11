@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+
+        <div class="popup" id="popup">
+            <div class="popup-task align-row justify-space-between">
+                <p>New Message</p>
+                <div class="popup-task-end align-row">
+                    <i class="fa fa-minus "></i>
+                    <i class="fa fa-expand "></i>
+                    <i class="fa fa-close " onclick="closePopup()" ></i>
+                </div>
+            </div>
+
+
+            <div class="popup-content">
+        <div class="popup-to">
+            <div style="flex: 1; display: flex; align-items: center;">
+                <p>To</p>
+                <input id="toInput" type="text" placeholder="Recipient's email" />
+            </div>
+            <p class="cc-bcc">Cc Bcc</p>
+        </div>
+        <hr>
+        
+        <div class="popup-to">
+            
+            <input id="subjectInput" type="text" placeholder="Subject" />
+        </div>
+        <hr>
+        
+        <div>
+            <textarea id="messageInput" class="popup-content-message" ></textarea>
+        </div>
+    </div>
+
+
+            <div class="popup-bottom align-row justify-space-between">
+                <div class="align-row justify-space-between popup-bottom-left">
+                    <div class="popup-bottom-send-container align-row" onclick="AddDiv()">
+                        <p>Send</p>
+                        <i class='fas fa-caret-down'></i>
+                    </div>
+                    <i class="material-icons rotate-icon">attachment</i>
+                    <i class="fa fa-link"></i>
+                    <i class='far fa-meh'></i>
+                    <i class='fab fa-google-drive'></i>
+                    <i class="fa fa-image"></i>
+                    <i class="fa fa-lock"></i>
+                    <i class="fa fa-pencil"></i>
+                    <i class="fa fa-ellipsis-v"></i>
+                </div>
+                <i class="fa fa-trash-o" onclick="Deletecontent()"></i>
+            </div>
+        </div>
+
+
+        <div class="task-container align-row">
+            <div class="task-front-container align-row">
+                <div class="task-expand-container">
+
+                    <button class="expand-btn" onclick="toggleMenu()">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      
+                </div>
+                <div class="task-gmail-img-container">
+                    <img class="google-img" src="Gmail_image.png">
+                </div>
+            </div>
+
+            <div class="task-search-container">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search mail">
+            </div>
+
+            <div class="task-end-container align-row">
+                <i class="fa fa-gear"></i>
+                <div class="align-row space">
+                    <i class="fa fa-ellipsis-v" style="font-size: 20px;"></i> 
+                    <i class="fa fa-ellipsis-v" style="font-size: 20px;"></i>
+                    <i class="fa fa-ellipsis-v" style="font-size: 20px;"></i>
+                </div>
+                <img src="user_img.jpg" class="user">
+            </div>
+
+        </div>
+
+        <div class="main-container">
+            <div class="main-left-container align-row">
+                <div id="menu1" class="menu1">
+                    <div class="open-btn">
+                <div class="align-row" onclick="openPopup()">
+                    <i class='fas fa-pen icon'></i>
+                    <p>Compose</p>
+                </div>
+            </div>
+                <div id="menu" class="menu">
+                    <ul>
+                      <li>
+                        <div class="main-compose-button align-row select">
+                            <i class="fa fa-inbox icon" style="font-size:24px"></i>
+                            <p>Inbox</p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        <div class="main-compose-button align-row">
+                            <span class="fa fa-star icon"></span>
+                            <p>Starred</p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        <div class="main-compose-button align-row">
+                            <i class="material-icons icon">snooze</i>
+                            <p>Snoozed</p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        <div class="main-compose-button align-row">
+                            <i class="material-icons icon">send</i>
+                            <p>Sent</p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        <div class="main-compose-button align-row">
+                            <i class='far fa-file icon'></i>
+                            <p>Draft</p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        <div class="main-compose-button align-row">
+                            <i class="fa fa-angle-down icon"></i>
+                            <p>More</p>
+                        </div>
+                    </li>
+
+                      <li>
+                        <div class="main-compose-button align-row justify-space-between">
+                            <p>Labels</p>
+                            <i class="fa fa-plus"></i>
+                        </div>
+                      </li>
+
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="main-center-container">
+                <div class="main-center-task align-row">
+                    <div class="main-center-task-left align-row">
+                        <input type="checkbox">
+                        <i class="fa fa-refresh"></i>
+                        <i class="fa fa-ellipsis-v"></i>
+                    </div>
+                    <div class="main-center-task-right align-row">
+                        <p>1-50 of 6,295</p>
+                        <i class="fa fa-angle-left"></i>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </div>
+                <hr>
+                <div id="received-mail" >
+                    <div class="main-center-content align-row justify-space-between">
+                        <div class="main-content-left-box align-row">
+                            <input type="checkbox">
+                            <i class="fa fa-star-o checked star" onclick="toggleStar(this)"></i>
+                            <p class="main-center-container-heading">me</p>
+                            <div class="align-row">
+                                <p class="main-center-container-title">HCI Assignment - </p>
+                                <p>you have successfully completed HCI Assignment</p>
+                                </div>
+                        </div>
+                        <div>
+                            <p>Feb 7</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
