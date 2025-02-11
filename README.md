@@ -1,9 +1,5 @@
 # Design Case Studies on Mental Models in Web Application Design: Gmail Case Study
 
-## Authors
-- CS24M1004 Pradhyumna
-- CS24M1002 Ajay Sharon
-- CS24M1010 Hari Krishnan
 
 ## Abstract
 This report highlights the impact of mental model violations on web application design, using Gmail as a case study. The goal is to evaluate both a good design and a bad design based on their alignment with user expectations (mental models). The report also provides usability metrics, identifies design violations, and suggests improvements.
