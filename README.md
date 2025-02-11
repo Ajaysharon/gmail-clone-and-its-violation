@@ -29,50 +29,50 @@ This section evaluates key features in the Gmail web application. The violations
 - **Good Design**: The send button is placed in a familiar location, aligned with user expectations.
 - **Bad Design**: The send button is replaced with a delete button, violating the user's mental model.
 
-![Good Design](send.png)
+![Good Design](send.PNG)
 *Good design: Send button is clearly visible.*
 
-![Bad Design](vdelete.png)
+![Bad Design](vdelete.PNG)
 *Bad design: Send button replaced by the delete button.*
 
 #### Violation 2: Search Bar Visibility
 - **Good Design**: Users can see the typed characters in the search bar.
 - **Bad Design**: The search bar only shows the characters once it's clicked, which violates the mental model of continuous visibility.
 
-![Good Design](search.png)
+![Good Design](search.PNG)
 *Good design: Typed characters are visible in the search bar.*
 
-![Bad Design](vsearch.png)
+![Bad Design](vsearch.PNG)
 *Bad design: Typed characters are only visible after clicking.*
 
 #### Violation 3: Placement of New Messages
 - **Good Design**: New messages appear at the top of the inbox, which is expected.
 - **Bad Design**: New messages appear at the bottom, violating the expected mental model.
 
-![Good Design](order.png)
+![Good Design](order.PNG)
 *Good design: New messages appear at the top of the inbox.*
 
-![Bad Design](Vunorder.png)
+![Bad Design](Vunorder.PNG)
 *Bad design: New messages appear at the bottom of the inbox.*
 
 #### Violation 4: Automatic Starred Messages
 - **Good Design**: There is no automatic starring of messages.
 - **Bad Design**: Every sent message is automatically starred, which might violate the user's mental model of what constitutes a starred message.
 
-![Good Design](star.png)
+![Good Design](star.PNG)
 *Good design: Messages are not automatically starred.*
 
-![Bad Design](vstar.png)
+![Bad Design](vstar.PNG)
 *Bad design: All sent messages are automatically starred.*
 
 #### Violation 5: Visibility of Menu Bar
 - **Good Design**: The menu bar containing options like *Compose*, *Inbox*, *Starred*, *Draft*, *Sent*, etc., is visible at all times.
 - **Bad Design**: The menu bar is hidden and not easily accessible, violating the user's mental model of easy navigation.
 
-![Good Design](menu.png)
+![Good Design](menu.PNG)
 *Good design: The menu bar is visible when logged in.*
 
-![Bad Design](vmenuoption.png)
+![Bad Design](vmenuoption.PNG)
 *Bad design: The menu bar is hidden when logging in.*
 
 ## Usability Metrics
